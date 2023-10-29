@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Swal from "sweetalert2";
 
 const LoginContainer = styled.div`
   display: flex;
@@ -122,7 +123,7 @@ function LoginScreen() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Login button clicked");
+    Swal.fire("Good job!", "Your Login Is Success!", "success");
   };
 
   return (

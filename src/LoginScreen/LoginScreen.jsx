@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Swal from "sweetalert2";
-
+import img from "../../public/undraw_authentication_re_svpt 1.png";
 const LoginContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -129,10 +129,7 @@ function LoginScreen() {
   return (
     <LoginContainer>
       <LeftSide>
-        <Image
-          src="../../public/undraw_authentication_re_svpt 1.png"
-          alt="Login"
-        />
+        <Image src={img} alt="Login" />
       </LeftSide>
       <RightSide>
         <FormDiv>
